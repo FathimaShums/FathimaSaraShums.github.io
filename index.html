@@ -62,7 +62,7 @@
 <section id="about" class="section container">
   <div class="section-label">01 / ABOUT</div>
   <div class="two-col">
-    <div><h2>Full-stack by evidence.<br>AI-aware by design.</h2></div>
+    <div><h2>Full-stack.<br>AI-aware.</h2></div>
     <div>
       <p class="lead">I'm a final-year BSc (Hons) Computer Science student with First Class Honours, and I've shipped three end-to-end full-stack systems across web, mobile, and cloud.</p>
       <p>My strongest work is building full CRUD REST APIs in Node.js/Express and connecting them to React (and Flutter) frontends, then deploying them — including a 7-service AWS microservices platform. Alongside this, I've worked with Python data pipelines and NLP, giving me a practical, grounded understanding of how AI capabilities get integrated into real software products.</p>
@@ -86,8 +86,8 @@
       </article>
       <article class="skill-card">
         <span class="number">03</span><h3>AI &amp; Data</h3>
-        <p>Python data-preprocessing pipelines (Engenuity AI internship) and an NLP document-parsing tool built with spaCy.</p>
-        <div class="tags"><span>Python</span><span>spaCy</span><span>NLP</span><span>Data pipelines</span></div>
+        <p>Built a contextual-bandit recommendation model and an NLP document parser; Python data pipelines and ML dataset work from the Engenuity AI internship.</p>
+        <div class="tags"><span>Python</span><span>Contextual Bandits</span><span>spaCy</span><span>NLP</span></div>
       </article>
       <article class="skill-card">
         <span class="number">04</span><h3>Engineering Practice</h3>
@@ -100,7 +100,7 @@
 
 <section id="projects" class="section container">
   <div class="section-label">03 / SELECTED PROJECTS</div>
-  <div class="section-heading"><h2>Proof through projects.</h2></div>
+  <div class="section-heading"><h2>Proof through projects.</h2><p>Three end-to-end full-stack systems, an applied ML recommender system, and an NLP tool.</p></div>
 
   <article class="project featured">
     <div class="project-meta"><span>01</span><span>FLAGSHIP PROJECT</span></div>
@@ -117,9 +117,25 @@
     </div>
   </article>
 
+  <article class="project featured">
+    <div class="project-meta"><span>02</span><span>FYP PROJECT · APPLIED ML</span></div>
+    <div class="project-body">
+      <div><h3>Skincare Recommender</h3><p class="project-subtitle">Dual-Layer Recommendation System with Adaptive Feedback Loop</p></div>
+      <div><p>A recommendation engine combining a rule-based clinical safety layer with FeedBAL, an episodic contextual bandit that personalises product recommendations over time.</p>
+      <div class="tags"><span>Python</span><span>Streamlit</span><span>MongoDB</span><span>Contextual Bandits</span><span>pytest</span></div>
+      <ul class="highlights">
+        <li>Built a rule-based clinical safety engine that filters recommendations against skin conditions — e.g. blocking retinoids during pregnancy, flagging glycolic acid for rosacea or sensitive skin.</li>
+        <li>Designed FeedBAL, an episodic contextual bandit (Upper Confidence Bound) operating over 43-dimensional user/product context vectors, with model weights persisted in MongoDB across sessions.</li>
+        <li>Built a Streamlit frontend with realistic delayed-feedback trials (e.g. 28-day simulated usage) to mirror real skincare usage patterns.</li>
+        <li>Ran offline simulations, ablation studies, and delay-lag evaluations benchmarking FeedBAL against a static baseline, with pytest coverage on the safety rules engine.</li>
+      </ul>
+      <a class="project-link" href="https://github.com/FathimaShums/skincare-RecSystem-with-adaptive-feedback-loop" target="_blank" rel="noopener">View on GitHub ↗</a></div>
+    </div>
+  </article>
+
   <div class="project-grid">
     <article class="project">
-      <div class="project-meta"><span>02</span><span>FULL STACK</span></div>
+      <div class="project-meta"><span>03</span><span>FULL STACK</span></div>
       <h3>NoSQL E-Commerce Analytics</h3>
       <p class="project-subtitle">MERN Analytics Platform</p>
       <p>Full CRUD REST APIs for products, orders and users, connected to a React frontend, with 8 MongoDB aggregation pipelines powering a real-time analytics dashboard plus JWT authentication and role-based access control.</p>
@@ -127,7 +143,7 @@
       <a class="project-link" href="https://github.com/FathimaShums/home-decor-ecommerce" target="_blank" rel="noopener">GitHub ↗</a>
     </article>
     <article class="project">
-      <div class="project-meta"><span>03</span><span>FULL STACK · WEB + MOBILE</span></div>
+      <div class="project-meta"><span>04</span><span>FULL STACK · WEB + MOBILE</span></div>
       <h3>Zaytun's</h3>
       <p class="project-subtitle">Full-Stack Food Ordering Platform</p>
       <p>Full CRUD REST endpoints (auth, food items, cart, checkout) consumed by both a Figma-designed React + Tailwind web app and a Flutter mobile app on the same Laravel backend, with role-based access for customers, employees and delivery staff.</p>
@@ -136,7 +152,7 @@
       <a class="project-link" href="https://github.com/FathimaShums/Zaytun-sMobileApp" target="_blank" rel="noopener">Mobile GitHub ↗</a>
     </article>
     <article class="project">
-      <div class="project-meta"><span>04</span><span>AI / NLP</span></div>
+      <div class="project-meta"><span>05</span><span>AI / NLP</span></div>
       <h3>Resume Parser Pro</h3>
       <p class="project-subtitle">NLP-Powered Document Intelligence</p>
       <p>Converts unstructured PDF/DOCX resumes into structured data using rule-based heuristics and spaCy NLP, with MongoDB persistence and JSON export.</p>
@@ -145,14 +161,6 @@
       <a class="project-link" href="https://resume-parser-ovvm.onrender.com" target="_blank" rel="noopener">Live demo ↗</a>
     </article>
   </div>
-
-  <article class="project research">
-    <div class="project-meta"><span>05</span><span>FINAL YEAR RESEARCH</span></div>
-    <div class="research-flex">
-      <div><h3>Adaptive Feedback Loop for Skincare Recommendation Systems</h3></div>
-      <div><p>Research project exploring a real-time reinforcement-signal feedback loop to improve personalisation in a recommendation engine.</p><p class="muted">Ongoing final-year work combining software engineering practice with applied AI research.</p></div>
-    </div>
-  </article>
 </section>
 
 <section id="experience" class="section section-muted">
